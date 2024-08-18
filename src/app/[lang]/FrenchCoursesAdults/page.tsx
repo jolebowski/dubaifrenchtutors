@@ -1,6 +1,6 @@
 'use client';
 
-import Contact from '@/src/app/[lang]/components/Contact';
+import Contact from '@/src/components/Contact';
 // import 'tailwindcss/tailwind.css';
 // import '../styles/globals.css';
 
