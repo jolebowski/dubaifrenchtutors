@@ -5,6 +5,7 @@ import Advantages from '@/src/components/Advantages';
 import Contact from '@/src/components/Contact';
 import DubaiFrenchClasses from '@/src/components/DubaiFrenchClasses';
 import FrenchCoursesIntro from '@/src/components/FrenchCoursesIntro';
+import { AboutSection } from '@/src/components/AboutSection';
 
 const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const { page } = await getDictionary(lang);
@@ -17,6 +18,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
           <DubaiFrenchClasses page={page} />
           <Advantages />
           <Advice />
+          <AboutSection />
           <Contact />
         </main>
       </div>
