@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { getDictionary } from '@/getDictionary';
 import { Locale } from '@/i18n.config';
 import Link from 'next/link';
-import LocaleSwitcher from './LocaleSwitcher';
+import LocaleSwitcher from '../LocaleSwitcher';
 
 const Navbar = ({ lang }: { lang: Locale }) => {
   const [navigation, setNavigation] = useState<any>({});
