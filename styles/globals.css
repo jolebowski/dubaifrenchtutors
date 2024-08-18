@@ -8,7 +8,7 @@ body {
 h1, h2, h3{
   color: #920C32
 }
-button, button[type="submit"], button[type="button"] {
+button[type="submit"], button[type="button"] {
   background-color: #552820;
 }
 footer{
