@@ -1,9 +1,10 @@
 import { getDictionary } from '@/getDictionary';
 import { Locale } from '@/i18n.config';
-import Advantages from '../../components/Advantages';
-import Contact from '../../components/Contact';
-import DubaiFrenchClasses from '../../components/DubaiFrenchClasses';
-import FrenchCoursesIntro from '../../components/FrenchCoursesIntro';
+import { Advice } from '@/src/components/Advice';
+import Advantages from '@/src/components/Advantages';
+import Contact from '@/src/components/Contact';
+import DubaiFrenchClasses from '@/src/components/DubaiFrenchClasses';
+import FrenchCoursesIntro from '@/src/components/FrenchCoursesIntro';
 
 const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const { page } = await getDictionary(lang);
@@ -15,6 +16,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
           <FrenchCoursesIntro page={page} />
           <DubaiFrenchClasses page={page} />
           <Advantages />
+          <Advice />
           <Contact />
         </main>
       </div>
