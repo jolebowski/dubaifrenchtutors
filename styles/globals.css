@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #EEEEE4;
+}
+h1, h2, h3{
+  color: #920C32
+}
+button, button[type="submit"], button[type="button"] {
+  background-color: #552820;
+}
+footer{
+  background-color: #920C32;
+}
+.rounded-courses{
+  background-color: #920C32;
+  color: #ffffff;
+}
+
+/* Style de la scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Largeur de la scrollbar */
+}
+
+/* Barre de défilement */
+::-webkit-scrollbar-thumb {
+  background-color: #920C32; /* Couleur de la barre de défilement */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.card {
+  /* Ajoutez une transition pour un effet lisse */
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  /* Définissez la taille par défaut de la carte */
+  width: 100%;
+  height: auto;
+  
+  /* Ajoutez une ombre par défaut pour mettre en évidence la carte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Au survol, agrandissez la carte et ajoutez une ombre plus prononcée */
+.card:hover {
+  transform: scale(1.05); /* Vous pouvez ajuster la valeur pour l'effet souhaité */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes moveInPlace {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, 5px); /* Ajustez les valeurs selon vos besoins */
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(-5px, -5px); /* Ajustez les valeurs selon vos besoins */
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animated-svg {
+  animation: moveInPlace 2s linear normal /* Ajustez la durée et l'effet d'animation selon vos besoins */
+}
+

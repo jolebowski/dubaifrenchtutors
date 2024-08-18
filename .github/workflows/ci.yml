@@ -1,0 +1,30 @@
+name: CI
+
+# Déclenche la pipeline sur chaque push
+on:
+  push:
+    branches:
+      - main # ou toute autre branche que vous souhaitez surveiller
+
+jobs:
+  install-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Remplacez par la version de Node.js que vous utilisez
+      
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies with pnpm
+        run: pnpm install # Commande pour installer les dépendances
+
+      # Si  tests, on peut les exécuter ici
+      # - name: Run tests
+      #   run: npm test
