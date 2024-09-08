@@ -2,7 +2,7 @@ export const AboutSection = () => {
   return (
     <section className="mt-16 mb-44">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-4 text-6xl font-bold md:text-6xl lg:text-5xl">
+        <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
           Dubai French Tutors - Votre Porte d'Entrée vers le Monde Francophone
         </h2>
         <div className="space-y-4">

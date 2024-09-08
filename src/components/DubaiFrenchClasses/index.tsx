@@ -26,7 +26,7 @@ const DubaiFrenchClasses = ({ page, lang }: { page: PageData; lang: string }) =>
   return (
     <section id="section2" className="mt-16 mb-44">
       <div className="text-center">
-        <h2 className="mb-4 text-6xl font-bold md:text-6xl lg:text-5xl">
+        <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
           {home.course}
         </h2>
       </div>

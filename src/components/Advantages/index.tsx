@@ -10,7 +10,7 @@ const Advantages = () => {
     >
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 pr-8">
-          <h2 className="mb-4 text-6xl font-bold md:text-6xl lg:text-5xl">Avantages</h2>
+        <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">Avantages</h2>
         <Image
           src="/images/personnes-ecoutant-orateur.png"
           alt="Groupe de personnes assises autour d'un orateur lors d'une présentation."
