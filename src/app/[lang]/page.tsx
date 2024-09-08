@@ -17,7 +17,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
           <FrenchCoursesIntro page={page} />
           <DubaiFrenchClasses page={page} />
           <Advantages />
-          <Advice />
+          {/* <Advice /> */}
           <AboutSection />
           <Contact />
         </main>
