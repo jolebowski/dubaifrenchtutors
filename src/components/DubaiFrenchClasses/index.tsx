@@ -11,7 +11,7 @@ type PageData = {
   };
 };
 
-const DubaiFrenchClasses = ({ page }: { page: PageData }) => {
+const DubaiFrenchClasses = ({ page, lang }: { page: PageData; lang: string }) => {
   const { home } = page;
 
   const images = [
@@ -48,10 +48,10 @@ const DubaiFrenchClasses = ({ page }: { page: PageData }) => {
 
       <div className="flex flex-col items-center mt-8">
         {images.map((image) => {
-          const { imageUrl, id , linkUrl, text} = image;
+          const { imageUrl, id, linkUrl, text } = image;
           return (
             <Link
-              href={linkUrl}
+              href={`/${lang}/${linkUrl}`}
               key={id}
               className="cursor-pointer"
             >

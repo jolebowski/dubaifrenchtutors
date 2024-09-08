@@ -15,7 +15,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
       <div className="container mx-auto">
         <main className="max-w-7xl mx-auto p-4">
           <FrenchCoursesIntro page={page} />
-          <DubaiFrenchClasses page={page} />
+          <DubaiFrenchClasses page={page} lang={lang} />
           <Advantages />
           {/* <Advice /> */}
           <AboutSection />
