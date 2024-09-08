@@ -1,4 +1,6 @@
 'use client';
+import Image from 'next/image';
+
 
 type PageData = {
   home: {
@@ -23,17 +25,6 @@ const FrenchCoursesIntro = ({ page }: { page: PageData }) => {
           </h2>
           <p className="text-gray-600 mb-4 md:mb-8 whitespace-normal">
             {home.desc}
-            {/* Nous vous proposons des cours de français dispensés par un Français
-            natif. Avec notre programme personnalisé, vous apprendrez rapidement
-            et efficacement.&nbsp;
-            <span className="font-semibold">Rejoignez-nous dès maintenant</span>
-            et découvrez une nouvelle façon
-            <span className="font-semibold">
-              {' '}
-              d&apos;apprendre le français.
-            </span>{' '}
-            Parlez français avec assurance
-            <span className="font-semibold"> dès aujourd&apos;hui !</span> */}
           </p>
           <div className="flex flex-col md:flex-row items-center md:justify-between">
             <button
@@ -46,11 +37,11 @@ const FrenchCoursesIntro = ({ page }: { page: PageData }) => {
         </div>
       </div>
       <div className="md:w-4/5 pl-4 border border-green500">
-        {' '}
-        {/* Augmentation de la largeur du conteneur */}
-        <img
-          src="https://cambridge-club.kyiv.ua/wp-content/themes/cambridge/images/head_img.png"
-          alt="Image de la section"
+        <Image
+          src="/images/fille-drapeau-francais-livres.png"
+          alt="Jeune fille tenant un drapeau français et des livres, illustrant l'apprentissage de la langue française"
+          width={600}
+          height={600}
           className="w-full h-auto rounded-md"
         />
       </div>

@@ -11,11 +11,13 @@ const Advantages = () => {
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 pr-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Avantages</h2>
-          <img
-            src="https://cambridge-club.kyiv.ua/wp-content/themes/cambridge/images/head_img.png"
-            alt="Image Section 3"
-            className="w-full h-auto object-cover rounded-lg md:w-4/5"
-          />
+        <Image
+          src="/images/personnes-ecoutant-orateur.png"
+          alt="Groupe de personnes assises autour d'un orateur lors d'une présentation."
+          width={400}
+          height={400}
+          className="w-full h-auto rounded-md"
+        />
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center mt-8 md:mt-0">
           <div className="md:grid md:grid-cols-2 md:gap-4">
