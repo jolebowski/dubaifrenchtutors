@@ -1,10 +1,6 @@
 'use client';
 
 import Contact from '@/src/components/Contact';
-// import 'tailwindcss/tailwind.css';
-// import '../styles/globals.css';
-
-// lorem ipsum text for testing purposes only (https://www.lipsum.com/) - 2 paragraphs of 100 words each (200 words total) - 1 paragraph of 50 words
 
 const fakeData = [
   {
