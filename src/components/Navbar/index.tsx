@@ -12,12 +12,12 @@ const Navbar = ({ lang }: { lang: Locale }) => {
   const [isOpen, setIsOpen] = useState(false); 
 
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await getDictionary(lang);
-      setNavigation(data.navigation);
+    const fetchNavigation = async () => {
+      const { navigation } = await getDictionary(lang);
+      setNavigation(navigation);
     };
 
-    fetchData();
+    fetchNavigation();
   }, [lang]);
 
   return (
