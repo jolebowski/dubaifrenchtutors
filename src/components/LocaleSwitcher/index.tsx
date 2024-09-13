@@ -16,19 +16,21 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <ul className="flex gap-x-3">
+    <select
+      className="rounded-md border bg-transparent px-3 py-2 text-gray-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      onChange={(e) => {
+        window.location.href = redirectedPathName(e.target.value);
+      }}
+      value={pathName.split('/')[1]}
+    >
       {i18n.locales.map((locale) => {
+        const flag = locale === 'fr' ? '🇫🇷' : locale === 'en' ? '🇬🇧' : locale === 'ar' ? '🇦🇪' : locale;
         return (
-          <li key={locale}>
-            <Link
-              href={redirectedPathName(locale)}
-              className="rounded-md border bg-black px-3 py-2 text-white"
-            >
-              {locale}
-            </Link>
-          </li>
+          <option key={locale} value={locale}>
+            {flag}
+          </option>
         );
       })}
-    </ul>
+    </select>
   );
 }
