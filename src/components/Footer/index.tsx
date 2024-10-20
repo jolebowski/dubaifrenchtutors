@@ -10,40 +10,23 @@ const Footer = () => {
           </h3>
           <ul className="space-y-3">
             <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
-                Accueil
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
+              <a href="#" className="text-white hover:text-gray-300  text-xl">
                 Cours en ligne
               </a>
             </li>
             <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
+              <a href="#" className="text-white hover:text-gray-300  text-xl">
                 À propos de nous
               </a>
             </li>
             <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
-                À propos de nous
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
-                À propos de nous
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
+              <a href="#" className="text-white hover:text-gray-300 text-xl">
                 À propos de nous
               </a>
             </li>
           </ul>
-          <p className="text-sm max-lines-2 mt-3">
-            Description de votre entreprise ici. Elle peut être assez longue
-            pour occuper plus dune ligne, mais elle sera coupée après deux
-            lignes.
+          <p className="text-white text-sm max-lines-2 mt-3">
+           Nous offrons des formations en programmation adaptées à tous les niveaux, animées par des experts du secteur. Grâce à nos méthodes interactives et personnalisées, vous développerez des compétences solides et pratiques. Inscrivez-vous dès aujourd'hui et transformez vos idées en réalité !
           </p>
         </div>
         <div className="mb-8 sm:mb-0">
@@ -52,27 +35,12 @@ const Footer = () => {
           </h3>
           <ul className="space-y-3">
             <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
-                Les meilleurs cours danglais pour enfants à Kiev
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
+              <a href="#" className="text-white hover:text-gray-300 text-xl">
                 FAQ
               </a>
             </li>
             <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
-                Contactez-nous
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
-                Contactez-nous
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
+              <a href="#" className="text-white hover:text-gray-300 text-xl">
                 Contactez-nous
               </a>
             </li>
@@ -86,7 +54,7 @@ const Footer = () => {
             <li>
               <a
                 href="tel:+123456789"
-                className="text-blue-700 hover:underline"
+                className="text-white hover:text-gray-300"
               >
                 123-456-789
               </a>
@@ -94,23 +62,13 @@ const Footer = () => {
             <li>
               <a
                 href="mailto:info@example.com"
-                className="text-blue-700 hover:underline"
+                className="text-white hover:text-gray-300"
               >
                 info@example.com
               </a>
             </li>
             <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
-                Adresse
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
-                Adresse
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-blue-700 hover:underline text-xl">
+              <a href="#" className="text-white hover:text-gray-300 text-xl">
                 Adresse
               </a>
             </li>
@@ -118,8 +76,8 @@ const Footer = () => {
         </div>
       </div>
       <div className=" p-6 sm:p-8 text-center mt-12">
-        <p className="text-gray-600 text-lg">
-          &copy; 2023 Mon Entreprise. Tous droits réservés.
+        <p className="text-white  text-base">
+          &copy; 2023 dubaifrenchtutors. Tous droits réservés.
         </p>
       </div>
     </footer>
